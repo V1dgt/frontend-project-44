@@ -1,8 +1,13 @@
-install: # установить зависимости
-       	npm ci
+install:
+	npm ci
 
-start: # быстрый запуск игры
+start:
 	node bin/brain-games.js
 
-publish: # публикация
+publish:
 	npm publish --dry-run
+
+.PHONY: lint
+
+lint:
+	npx eslint .
