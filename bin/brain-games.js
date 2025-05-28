@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import {getName} from '../src/cli.js';
+/* eslint-disable import/extensions */
+import getName from '../src/cli.js';
 
 getName();
