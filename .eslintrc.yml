@@ -6,4 +6,5 @@ extends:
 parserOptions:
   ecmaVersion: 15
   sourceType: module
-rules: {}
+rules:
+  import/extensions: off
