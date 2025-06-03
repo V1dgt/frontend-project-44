@@ -1,15 +1,21 @@
+const calculate = (num, operator, num2) => {
+  switch (operator) {
+    case '+': return num + num2
+    case '-': return num - num2
+    case '*': return num * num2
+    default: throw new Error('Неизвестный оператор')
+  }
+}
+
+const createRandomNumber = () => {
+  return Math.floor(Math.random() * 100)
+}
+
 export default () => {
-  const randomNumber = Math.floor(Math.random() * 100);
-  const randomNumberTwo = Math.floor(Math.random() * 10);
-  const operators = ['+', '-', '*'];
-  const randomOperator = operators[Math.floor(Math.random() * operators.length)];
-  const calculate = (num, operator, num2) => {
-    switch (operator) {
-      case '+': return num + num2;
-      case '-': return num - num2;
-      case '*': return num * num2;
-      default: throw new Error('Неизвестный оператор');
-    }
-  };
-  return { question: `${randomNumber} ${randomOperator} ${randomNumberTwo}`, answer: `${calculate(randomNumber, randomOperator, randomNumberTwo)}` };
-};
+  const description = 'What is the result of the expression?'
+  const operators = ['+', '-', '*']
+  const randomOperator = operators[Math.floor(Math.random() * operators.length)]
+  const firstNumber = createRandomNumber()
+  const twoNumber = createRandomNumber()
+  return { description, question: `${firstNumber} ${randomOperator} ${twoNumber}`, answer: `${calculate(firstNumber, randomOperator, twoNumber)}` }
+}
