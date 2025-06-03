@@ -2,6 +2,4 @@
 import runGame from '../src/index.js'
 import generateQuestionAndAnswer from '../src/games/game-even.js'
 
-const description = 'test'
-
-runGame(description, generateQuestionAndAnswer)
+runGame(generateQuestionAndAnswer)
