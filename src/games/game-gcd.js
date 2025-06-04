@@ -15,7 +15,7 @@ const generateRound = () => {
   let a = randomNumber
   let b = randomNumberTwo
   const answer = computeGcd(a, b)
-  return {question: `${randomNumber} ${randomNumberTwo}`, answer: `${answer}`}
+  return { question: `${randomNumber} ${randomNumberTwo}`, answer: `${answer}` }
 }
 
 export default () => {

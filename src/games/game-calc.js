@@ -18,7 +18,7 @@ const generateRound = () => {
   const randomOperator = operators[Math.floor(Math.random() * operators.length)]
   const firstNumber = createRandomNumber()
   const twoNumber = createRandomNumber()
-  return {question: `${firstNumber} ${randomOperator} ${twoNumber}`, answer: `${calculate(firstNumber, randomOperator, twoNumber)}` }
+  return { question: `${firstNumber} ${randomOperator} ${twoNumber}`, answer: `${calculate(firstNumber, randomOperator, twoNumber)}` }
 }
 
 export default () => {
