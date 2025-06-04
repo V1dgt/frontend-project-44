@@ -25,9 +25,6 @@
     "brain-calc": "bin/brain-calc.js"
   },
   "dependencies": {
-    "brain-calc": "^1.0.0",
-    "brain-even": "^0.1.12",
-    "brain-gcd": "^1.0.0",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
