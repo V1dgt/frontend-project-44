@@ -9,7 +9,7 @@ export default (description, generateRound) => {
   console.log(description)
   for (let i = 0; i < ROUNDCOUNT; i += 1) {
     const { question, answer } = generateRound()
-    console.log(`Question: ${question}`)
+    console.log(`Question: ${String(question).trim()}`)
     const userAnswer = readlineSync.question('Your answer: ')
     if (userAnswer === answer) {
       console.log('Correct!')
